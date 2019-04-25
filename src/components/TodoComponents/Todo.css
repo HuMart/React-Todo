@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet');
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:lightgrey;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+p,
+span{
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.App {
+    text-align: center;
+    padding: 0 36px;
+    max-width: 100;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1 {
+    color: rgb(77, 87, 231);
+    text-align: center;
+}
+
+.todo-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+.todo{
+    background-color: rgb(77, 87, 231);
+    width: 40%;
+    text-align: center;
+    margin: 5px 0;
+    padding-left: 8px;
+    border-radius: 10px;
+}
+
+.todo.completed{
+    background-color: red;
+    text-decoration: black line-through;
+}
+
+form>input {
+    background-color: lightgrey;
+    border: 0;
+    padding: 6px 0;
+    font-size: 1rem;
+    width: 200px;
+    outline: 0;
+    color: white;
+    border-bottom: 1px solid  rgb(77, 87, 231);
+    margin-right: 8px;
+}
+
+button {
+    background-color: rgb(77, 87, 231);
+    border: 1px solid rgb(77, 87, 231);
+    color: white;
+    font-size: 16px;
+    padding: 6px 14px;
+    border-radius: 10px;
+}

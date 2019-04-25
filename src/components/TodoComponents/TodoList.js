@@ -4,18 +4,15 @@ import React from "react"
 import Todo from './Todo'
 
 
-const TodoList = props => {
+export default function TodoList(props) {
+return (
+    <div className='todo-list'>
+     {props.task.map(todo => (
+          <Todo key={todo.id} todo={todo} toggleOn={props.toggleOn} /> 
+     ))}
+    </div>
+ );
+}
 
-    return (
-      <div>
-        {props.taskLists.map(listItem => {
-          return (
-            <Todo key={listItem.id} value={listItem.task} completed={listItem.completed} />
-          )
-        })}
-      </div>
-    );
-  }
+    
 
-
-export default TodoList 
