@@ -16,6 +16,7 @@ export default class TodoForms extends React.Component {
 
     handleSubmit = e => {
         e.preventDefault();
+        if (!this.state.input) return;
         this.props.addTodo(this.state.input);
         this.setState({input: ''});
     };
@@ -24,7 +25,7 @@ export default class TodoForms extends React.Component {
         return(
             <form onSubmit={this.handleSubmit}>
                 <input 
-                placeholder='Add Task'
+                placeholder='Enter Task'
                 type='text'
                 name='input'
                 id='new-task'

@@ -9,8 +9,52 @@ body{
 }
 
 body {
-    background-color:lightgrey;
+	width: 100wh;
+	height: 90vh;
+	color: #fff;
+	background: linear-gradient(-45deg, rgb(241, 241, 241), rgb(113, 117, 107), rgb(34, 32, 27), #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
 }
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
 
 
 h1,
@@ -28,60 +72,65 @@ span{
 
 .App {
     text-align: center;
-    padding: 0 36px;
+    padding: 0 16px;
     max-width: 100;
     margin: 0 auto;
 }
 
 .header{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 h1 {
-    color: rgb(77, 87, 231);
+    font-size: 6rem;
+    color: rgb(61, 72, 226);
     text-align: center;
+    text-shadow: 5px 10px 8px #888888;
 }
 
 .todo-list {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     width: 100%;
-    margin: 0 auto;
-    
+    margin: 10px auto;
+    box-shadow: 5px 10px 8px #888888;
 }
 .todo{
     background-color: rgb(77, 87, 231);
-    width: 40%;
+    width: 100%;
     text-align: center;
-    margin: 5px 0;
-    padding-left: 8px;
+    margin: 20px 0;
     border-radius: 10px;
+    box-shadow: 5px 10px 8px #888888;
 }
 
 .todo.completed{
-    background-color: red;
-    text-decoration: black line-through;
+    background-color: rgb(117, 17, 17);
+    text-decoration: rgb(0, 0, 0) line-through;
 }
 
 form>input {
-    background-color: lightgrey;
     border: 0;
     padding: 6px 0;
-    font-size: 1rem;
-    width: 200px;
+    font-size: 2rem;
+    width: 45%;
     outline: 0;
-    color: white;
-    border-bottom: 1px solid  rgb(77, 87, 231);
-    margin-right: 8px;
+    margin-right: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 5px 10px 8px #888888;
 }
 
 button {
     background-color: rgb(77, 87, 231);
-    border: 1px solid rgb(77, 87, 231);
     color: white;
-    font-size: 16px;
+    width: 45%;
+    font-size: 2rem;
     padding: 6px 14px;
     border-radius: 10px;
+    box-shadow: 5px 10px 8px #888888;
 }
