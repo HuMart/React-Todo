@@ -12,7 +12,7 @@ body {
 	width: 100wh;
 	height: 90vh;
 	color: #fff;
-	background: linear-gradient(-45deg, rgb(241, 241, 241), rgb(113, 117, 107), rgb(34, 32, 27), #23D5AB);
+	background: linear-gradient(-45deg, rgb(241, 241, 241), rgb(113, 117, 107), rgb(61, 61, 60), rgb(243, 101, 6));
 	background-size: 400% 400%;
 	-webkit-animation: Gradient 15s ease infinite;
 	-moz-animation: Gradient 15s ease infinite;
@@ -97,11 +97,12 @@ h1 {
     align-items: center;
     width: 100%;
     margin: 10px auto;
-    box-shadow: 5px 10px 8px #888888;
+    /* box-shadow: 5px 10px 8px #888888; */
 }
 .todo{
     background-color: rgb(77, 87, 231);
     width: 100%;
+    font-size: 2rem;
     text-align: center;
     margin: 20px 0;
     border-radius: 10px;
@@ -114,6 +115,7 @@ h1 {
 }
 
 form>input {
+    
     border: 0;
     padding: 6px 0;
     font-size: 2rem;
